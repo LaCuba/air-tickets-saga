@@ -1,0 +1,114 @@
+.body {
+  width: 1440px;
+  // height: 1024px;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url(./../../icons/airplane.png);
+  
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.blur {
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 1440px;
+  // height: 1024px;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.form {
+  width: 410px;
+  height: 338px;
+  padding-left: 33px;
+  padding-right: 32px;
+  background-color: #fff;
+  border-radius: 20px;
+
+  // display: grid;
+  // grid-template-rows: repeat(5, 50px);
+  // gap: 20px;
+
+  .title {
+    text-align: center;
+    padding-top: 53px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  
+  .container {
+    padding-top: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .label {
+    align-self: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .input {
+    justify-self: center;
+    width: 345px;
+    height: 34px;
+    left: 548px;
+    top: 434px;
+
+    border: 1px solid #C9CACC;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  .submitContainer {
+    display: grid;
+    justify-items: end;
+  }
+
+  .submit {
+    width: 116px;
+    height: 34px;
+    margin-top: 25px;
+
+    color: #fff;
+    background: linear-gradient(104.34deg, #3C4CAD -15.34%, #00C3FF 145.95%);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .submit:hover {
+    box-shadow: 0px 0px 4px #99A0A3;
+  }
+
+  .submit:active {
+    background: linear-gradient(104.34deg, #5362BE -15.34%, #4AD5FF 145.95%);
+    border: 1.5px solid rgba(29, 138, 216, 0.3);
+  }
+}
+
+  .error {
+    align-self: end;
+    display: grid;
+    justify-items: center;
+    color: red;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
